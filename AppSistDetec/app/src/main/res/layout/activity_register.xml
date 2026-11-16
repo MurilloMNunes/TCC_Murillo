@@ -1,0 +1,99 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_register" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="top"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/dadosTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="top"
+            android:text="Insira os dados solicitados abaixo para realizar o seu cadastro no sistema."
+            android:textSize="20sp" />
+
+        <!-- <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/> -->
+
+        <TextView
+            android:id="@+id/insiraTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Insira seu nome de usuário:"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="60dp" />
+
+        <!-- Campo para o nome de usuário -->
+        <EditText
+            android:id="@+id/nomeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome de usuário"
+            android:inputType="text"
+            android:layout_marginTop="8dp"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/emailTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Insira seu e-mail:"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="32dp" />
+
+        <!-- Campo para o e-mail -->
+        <EditText
+            android:id="@+id/registerEmailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="8dp"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/senhaTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Escolha uma senha de no mínino 6 caracteres:"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="32dp" />
+
+        <!-- Campo para a senha -->
+        <EditText
+            android:id="@+id/registerPasswordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:minHeight="48dp" />
+
+        <!-- Botão de registro -->
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cadastrar"
+            android:backgroundTint="@color/black"
+            android:layout_marginTop="48dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

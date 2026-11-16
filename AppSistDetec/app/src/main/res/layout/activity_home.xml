@@ -1,0 +1,129 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_home" />
+
+    <TextView
+        android:id="@+id/userTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuário atual:"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_gravity="start"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/documentIdEditText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Digite a placa do veículo"
+            android:inputType="text"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/adicionarButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="#001BB1"
+                android:text="Adicionar veículo" />
+
+            <Button
+                android:id="@+id/buttonClose"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:layout_weight="1"
+                android:backgroundTint="#FF0000"
+                android:text="Remover veículos monitorados" />
+
+        </LinearLayout>
+
+    <!-- <Button
+        android:id="@+id/buttonClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remover todos"
+        android:textSize="24sp"
+        android:textColor="#FF0000"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="right" /> -->
+
+         <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_marginTop="16dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerMonitorados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+
+        <!-- <ImageView
+             android:id="@+id/homeImageView"
+             android:layout_width="match_parent"
+             android:layout_height="200dp"
+             android:src="@drawable/accident_1476850"
+             android:scaleType="centerCrop"
+             android:contentDescription="Imagem da tela inicial" />
+
+         <TextView
+             android:id="@+id/nomeTextView"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Nome: "
+             android:textSize="18sp"
+             android:layout_marginBottom="8dp" />
+
+         <TextView
+             android:id="@+id/emailTextView"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Email: "
+             android:textSize="18sp"
+             android:layout_marginBottom="8dp" /> -->
+
+        </LinearLayout>
+
+    <!-- Botão de logout -->
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="@color/black"
+        android:text="Sair" />
+
+</LinearLayout>

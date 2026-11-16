@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "800276197949",
+    "project_id": "sistdetec-app",
+    "storage_bucket": "sistdetec-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800276197949:android:25ba61ec61ed285fa6f054",
+        "android_client_info": {
+          "package_name": "com.murillonunes.appsistdetec"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrpISFrwdRWldgi_wFezefALaCbS7kEeQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800276197949:android:a2acd648279f2b93a6f054",
+        "android_client_info": {
+          "package_name": "com.sistdetecapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrpISFrwdRWldgi_wFezefALaCbS7kEeQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
